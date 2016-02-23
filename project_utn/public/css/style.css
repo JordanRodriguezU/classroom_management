@@ -1,0 +1,33 @@
+body{
+	background: #b9f6ca;
+}
+.login_user{
+	width: 60%;
+	height: 355px;
+	margin-top: 18%;
+	border-radius: 2%;
+	background: white;
+}
+
+.action_login{
+	margin-top: 2%;
+}
+a .iconlogin{
+	margin-left: 5%;
+	position: relative;
+	top: 6px;
+	margin-top: 5%;
+}
+#createUser{
+	margin-top: 2%;
+}
+.forgetPassword{
+	margin-top: 3%;
+}
+#iconStartSession{
+	font-size: 40px!important;
+	margin-left: 5%;
+	position: relative;
+	top: 6px;
+	margin-top: 5%;
+}
