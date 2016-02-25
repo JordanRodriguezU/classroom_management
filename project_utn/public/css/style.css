@@ -31,6 +31,7 @@ a .iconlogin{
 	top: 6px;
 	margin-top: 5%;
 }
+<<<<<<< HEAD
 .modal{
 	max-height: 90%!important;
 	width: 55%;
@@ -39,4 +40,33 @@ a .iconlogin{
 }
 .buttonForget{
 	margin-top: 6%!important;
+=======
+
+.tableProfile
+{
+	width: 86%;
+	height: 243px;
+	margin-top: 18%;
+	border-radius: 2%;
+	background: white;
+	
+
+}
+
+.moreProfile
+{
+	bottom: -318px;
+	left: 8%;
+}
+
+.columnProfile
+{
+	background-color: #26a99a;
+    color: white;
+}
+
+.lineProfile
+{
+	border-bottom: #26a99a 1px solid;
+>>>>>>> origin/master
 }

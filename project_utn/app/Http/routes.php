@@ -11,11 +11,17 @@
 |
 */
 
+
+Route::get('Profile', function () {
+    return view('MaintenanceProfile');
+});
+
+
 Route::get('/', function () {
 	return view('main');
 });
-Route::get('profile', [
-	'as' => 'profile', 'uses' => 'UserController@sendEmail'
+Route::get('email', [
+	'as' => 'email', 'uses' => 'UserController@sendEmail'
 	]);
 
 /*

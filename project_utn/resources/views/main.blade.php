@@ -54,7 +54,7 @@
 					</div>
 					<div class="modal-footer">
 						<div class="col m5">
-						<p>{{link_to('profile','Enviar', array('class' => 'waves-effect waves-light btn buttonForget' ))}}</p>	
+						<p>{{link_to('email','Enviar', array('class' => 'waves-effect waves-light btn buttonForget' ))}}</p>	
 						</div>
 						<div class="col m5">
 						<p>{{link_to('/','Atras', array('class' => 'waves-effect waves-light btn buttonForget' ))}}</p>	
