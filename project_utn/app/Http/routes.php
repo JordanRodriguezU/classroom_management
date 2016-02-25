@@ -11,6 +11,12 @@
 |
 */
 
+
+Route::get('Profile', function () {
+    return view('MaintenanceProfile');
+});
+
+
 Route::get('/', function () {
 	return view('main');
 });

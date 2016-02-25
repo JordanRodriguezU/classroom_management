@@ -9,5 +9,13 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
+	//Lista de todos los perfiles en la base de datos
+	public function  showProfile()
+	{
+		$profile = Carrers::all();
+
+        return view('MaintenanceProfile.php', ['carrers' => $profile]);
+
+	}
    
 }
