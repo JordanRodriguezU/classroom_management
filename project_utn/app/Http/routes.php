@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
+
+Route::get('Profile', function () {
+    return view('MaintenanceProfile');
 });
+
+
+Route::get('/', function () {
+	return view('main');
+});
+Route::get('email', [
+	'as' => 'email', 'uses' => 'UserController@sendEmail'
+	]);
 
 Route::get('cursos', function () {
     return view('cursos/new_curso');

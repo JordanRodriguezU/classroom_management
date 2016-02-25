@@ -31,3 +31,45 @@ a .iconlogin{
 	top: 6px;
 	margin-top: 5%;
 }
+
+.modal{
+	max-height: 90%!important;
+	width: 55%;
+	margin: auto;
+	height: 253px;
+}
+.buttonForget{
+	margin-top: 6%!important;
+
+}
+.tableProfile
+{
+	width: 86%;
+	height: 243px;
+	margin-top: 18%;
+	border-radius: 2%;
+	background: white;
+	
+
+}
+.tableProfile{
+
+}
+
+.moreProfile
+{
+	bottom: -318px;
+	left: 8%;
+}
+
+.columnProfile
+{
+	background-color: #26a99a;
+    color: white;
+}
+
+.lineProfile
+{
+	border-bottom: #26a99a 1px solid;
+
+}
