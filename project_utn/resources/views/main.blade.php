@@ -36,36 +36,38 @@
 				</div>
 
 				<div class="col m12 offset-m3 forgetPassword">
-
+					<a href="#emailplease" class="modal-trigger">Olvide mi contraseña ?</a>
 				</div>
 
 				{!! Form::close() !!}
 
 
-				<a href="#emailplease">Olvide mi contraseña ?</a>
+				
 				<div id="emailplease" class="modal">
 					<div class="modal-content">
-						<h4>Modal Header</h4>
-						<p>A bunch of text</p>
+						<h5>Introducir el correo, para restablecer su contraseña</h5>
+						<div class="input-field col s6 m11">
+							<i class="material-icons prefix">email</i>
+							<input id="emailforgetPassword" name="emailforgetPassword" type="text" class="validate">
+							<label for="emailforgetPassword">Correo</label>
+						</div>
 					</div>
 					<div class="modal-footer">
-					<li>{{link_to('/','Olvide mi contraseña ?')}}</li>
-					<!---->
+						<div class="col m5">
+						<p>{{link_to('profile','Enviar', array('class' => 'waves-effect waves-light btn buttonForget' ))}}</p>	
+						</div>
+						<div class="col m5">
+						<p>{{link_to('/','Atras', array('class' => 'waves-effect waves-light btn buttonForget' ))}}</p>	
+						</div>
 						
-					
 					</div>
 				</div>
-
-
-
-
-
-
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/animation.js"></script>
 </body>
 </html>

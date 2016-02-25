@@ -14,6 +14,9 @@
 Route::get('/', function () {
 	return view('main');
 });
+Route::get('profile', [
+	'as' => 'profile', 'uses' => 'UserController@sendEmail'
+	]);
 
 /*
 |--------------------------------------------------------------------------

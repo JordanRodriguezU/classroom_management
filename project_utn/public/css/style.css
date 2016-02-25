@@ -31,3 +31,12 @@ a .iconlogin{
 	top: 6px;
 	margin-top: 5%;
 }
+.modal{
+	max-height: 90%!important;
+	width: 55%;
+	margin: auto;
+	height: 253px;
+}
+.buttonForget{
+	margin-top: 6%!important;
+}
