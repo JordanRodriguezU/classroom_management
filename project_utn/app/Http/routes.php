@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('main');
 });
 
+Route::get('cursos', function () {
+    return view('cursos/new_curso');
+});
+
+Route::get('periodos', function () {
+    return view('periodos/new_periodo');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
