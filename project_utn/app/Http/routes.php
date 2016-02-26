@@ -12,9 +12,13 @@
 */
 
 
-Route::get('Profile', function () {
-    return view('MaintenanceProfile');
-});
+Route::get('profile/delete', 'UserController@getProfile');
+
+
+Route::get('profile', [
+	'as' => 'profile', 'uses' => 'UserController@showProfile'
+	]);
+
 
 
 Route::get('/', function () {

@@ -46,19 +46,18 @@ a .iconlogin{
 {
 	width: 86%;
 	height: 243px;
-	margin-top: 18%;
+	margin-top: 11%;
 	border-radius: 2%;
 	background: white;
+	overflow:scroll;
 	
 
 }
-.tableProfile{
 
-}
 
 .moreProfile
 {
-	bottom: -318px;
+	bottom: -254px;
 	left: 8%;
 }
 
@@ -72,4 +71,9 @@ a .iconlogin{
 {
 	border-bottom: #26a99a 1px solid;
 
+}
+
+.checkedProfile
+{
+	height: 16px!important;
 }
