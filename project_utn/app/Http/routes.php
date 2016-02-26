@@ -13,16 +13,43 @@
 
 
 Route::get('Profile', function () {
-    return view('MaintenanceProfile');
+	return view('MaintenanceProfile');
 });
-
 
 Route::get('/', function () {
 	return view('main');
 });
-Route::get('email', [
-	'as' => 'email', 'uses' => 'UserController@sendEmail'
+//when user forget the password
+Route::post('forgetemail', [
+
+	'as' => 'forgetemail', 'uses' => 'UserController@forgetemail'
 	]);
+//load the screen of the admin
+Route::post('admin', [
+
+	'as' => 'admin', 'uses' => 'UserController@login'
+	]);
+
+Route::get('patito', function () {
+	return view('admin');
+});
+
+//when the admin get into to user
+Route::get('users', [ 
+	'as' => 'users', 'uses' => 'UserController@loadUser'
+	]);
+//when create a user
+
+Route::get('moreuser', function () {
+	'as' => 'moreuser', 'uses' => 'UserController@loadCareerProfileTypeUser'
+	
+});
+//route of create user
+Route::post('create', [
+
+	'as' => 'create', 'uses' => 'UserController@create'
+	]);
+
 
 /*
 |--------------------------------------------------------------------------

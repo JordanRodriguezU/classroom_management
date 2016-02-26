@@ -39,7 +39,7 @@ a .iconlogin{
 	height: 253px;
 }
 .buttonForget{
-	margin-top: 6%!important;
+	margin-top: 8%!important;
 
 }
 .tableProfile
@@ -52,10 +52,6 @@ a .iconlogin{
 	
 
 }
-.tableProfile{
-
-}
-
 .moreProfile
 {
 	bottom: -318px;
@@ -65,11 +61,39 @@ a .iconlogin{
 .columnProfile
 {
 	background-color: #26a99a;
-    color: white;
+	color: white;
 }
 
 .lineProfile
 {
 	border-bottom: #26a99a 1px solid;
 
+}
+.buttonMainAdmin{
+	margin-left: 36%;
+}
+.adminText{
+	margin-left: 28%;
+}
+#cursos{
+	height: 256px!important
+}
+.adminTextclassroom{
+	margin-left: 7%;
+}
+.adminTextcareer{
+	margin-left: 2%;	
+}
+.imgCrud{
+	margin-top: 9%;
+
+}
+.formCreateUser{
+	background: white;
+	height: 432px;
+	margin-top: 12%;
+}
+.buttonCreateUser{
+	margin-top: 1%;
+	margin-left: 45%!important
 }

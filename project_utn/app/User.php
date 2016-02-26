@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -36,5 +37,20 @@ class User extends Authenticatable
     public function career(){
         return $this->belongsToMany(Career::class);
     }
+//valid the password that have 
+   // @include('config/constant'); 
+ //   include("config/constant");
+    public function isValidEmail($data)
+    {
+        $quantity = strlen($data);
+        $posicion = strpos($data, '@');
+        $format = substr("$data", $posicion+1);
+        echo $format;
+        if('est.utn.ac.cr' == $format)        {
+          return true;
+      }else{
+        return false;
+    }
 
+}
 }
