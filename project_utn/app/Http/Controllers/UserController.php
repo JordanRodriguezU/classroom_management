@@ -22,7 +22,7 @@ class UserController extends Controller
 		$career = Career::all();
 		$profile = Profile::all();
 		$typeProfile = Type_user::all();
-		return view('create',array('carrer' => $carrer,'profile' => $profile,'typeProfile' =>$typeProfile));
+		return view('create',array('carrer' => $career,'profile' => $profile,'typeProfile' =>$typeProfile));
 	}
 
    //load data of the user in the table
@@ -71,6 +71,29 @@ class UserController extends Controller
 */
 
 }
+
+//Obtiene todos los profile que existen en la tabla
+ 	public function showProfile()
+ 	{
+ 		$profile = Profile::all();
+ 
+ 		return view('MaintenanceProfile', array('profiles' => $profile));	
+  	}
+ 
+ 	//Elimina un perfil
+ 	public function getProfile(Request  $request)
+ 	{
+ 		$id = $request->input('id');
+ 
+ 		$profile = Profile::find($id);
+         $profile->delete();
+ 
+ 		return response()->json([
+ 			'status' => 'valid',
+ 			]);
+ 
+ 	}
+
 
 }
 

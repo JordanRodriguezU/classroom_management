@@ -28,11 +28,11 @@
 			<div class="col m12">
 				<div class="col m1">
 					
-					 <a href="{{url('moreuser')}}" class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">add</i></a>
+					 <a href="{{url('moreuser')}}" class="btn-floating btn-large waves-effect waves-light teal lighten-1 moreProfile"><i class="material-icons">add</i></a>
 				</div>
-				<table class="bordered col m10 col offset-m1">
+				<table class="bordered col m10 col offset-m1 tableProfile centered section scrollspy">
 					<thead>
-						<tr>
+						<tr class="columnProfile">
 							<th data-field="id">Correo</th>
 							<th data-field="name">Nombre</th>
 							<th data-field="last_name">Apellido</th>
@@ -44,11 +44,11 @@
 					<tbody>
 						@foreach( $user as $user )
 						<tr>
-							<td>{{$user->email}}</td>
-							<td>{{$user->name}}</td>
-							<td>{{$user->last_name}}</td>
-							<td>{{$user->phone}}</td>
-							<td> <a class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">delete_forever</i> </a><a class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">update</i> </a> </td>
+							<td class="lineProfile">{{$user->email}}</td>
+							<td class="lineProfile">{{$user->name}}</td>
+							<td class="lineProfile">{{$user->last_name}}</td>
+							<td class="lineProfile">{{$user->phone}}</td>
+							<td class="lineProfile"> <a class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">delete_forever</i> </a><a class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">update</i> </a> </td>
 							
 							@if ($user->active == "true")
 							<td>

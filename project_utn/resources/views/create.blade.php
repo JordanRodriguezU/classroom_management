@@ -60,8 +60,8 @@
 						<div class="col m6 ">
 							<input list="type_profile" name="type_profile" placeholder="Tipo de usuario">
 							<datalist id="type_profile">
-								@foreach( $typeProfile as $typeProfile )
-								<option value={{$typeProfile->name}}>
+								@foreach( $typeProfile as $p )
+								<option value={{$p->description}}>
 									@endforeach
 								</datalist>
 

@@ -11,10 +11,12 @@
 |
 */
 
+Route::get('profile/delete', 'UserController@getProfile');
 
-Route::get('Profile', function () {
-	return view('MaintenanceProfile');
-});
+
+Route::get('profile', [
+	'as' => 'profile', 'uses' => 'UserController@showProfile'
+	]);
 
 Route::get('/', function () {
 	return view('main');
@@ -40,10 +42,10 @@ Route::get('users', [
 	]);
 //when create a user
 
-Route::get('moreuser', function () {
+Route::get('moreuser', [
 	'as' => 'moreuser', 'uses' => 'UserController@loadCareerProfileTypeUser'
 	
-});
+	]);
 //route of create user
 Route::post('create', [
 
